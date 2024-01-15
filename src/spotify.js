@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const authendpoint= "https://accounts.spotify.com/authorize?"
 const clientid="327f167f51c547a1b897caf1b842f79d"
-const redirecturi="http://localhost:3000/"
+const redirecturi="https://harmony-hub-three.vercel.app/"
 const scopes = ["user-library-read", "playlist-read-private"];
 
 export const loginEndpoint = `${authendpoint}client_id=${clientid}&redirect_uri=${redirecturi}&scope=${scopes.join(
